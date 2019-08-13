@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+			"label": "Debug.Build",
+			"group": "build",
+            "type": "shell",
+			"windows": {
+				"command": "mingw32-make",
+			},
+			"linux": {
+				"command": "make",
+			},
+            "args": [
+                "DEBUG=1"
+            ]
+        },
+        {
+			"label": "Release.Build",
+			"group": "build",
+            "type": "shell",			
+			"windows": {
+				"command": "mingw32-make",
+			},
+			"linux": {
+				"command": "make",
+			},
+            "args": [
+            ]
+        }
+    ]
+}
